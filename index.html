@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1 class="container">Exercício Bootstrap</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h2>O Avião</h2>
+            </div>
+            <img src="./images/aviao2.jpg" alt="Avião" />
+            <div class="card-body">
+              <div class="card-title">
+                <h4>Sobre o avião</h4>
+              </div>
+              <div class="card-text">
+                Um avião ou aeroplano é qualquer aeronave que necessita de asas
+                fixas e motores para se sustentar no ar. Pode possuir um ou mais
+                planos de asa, sendo estas fixas em relação ao corpo da
+                aeronave, ou seja, que dependem do movimento do veículo como um
+                todo para gerar sustentação aérea. Essa definição de asa fixa
+                também se aplica aos que possuem asas dobráveis, pois estas
+                também só geram sustentação ao se deslocar todo o veículo.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h2>O Navio</h2>
+            </div>
+            <img src="./images/navio3.jpg" alt="Navio" />
+            <div class="card-body">
+              <div class="card-title">
+                <h4>Sobre o navio</h4>
+              </div>
+              <div class="card-text">
+                O navio (do latim, navis) é uma grande embarcação, geralmente
+                dotada de um ou mais conveses. Um navio tem, geralmente, tamanho
+                para transportar os seus próprios barcos, como botes
+                salva-vidas, botes ou lanchas. Geralmente, a lei local e órgãos
+                de regulamentação irão definir o tamanho ou o número de mastros
+                que um barco deverá ter para ser elevado à categoria de navio.
+                Os submarinos não são referidos como "barcos", exceto os
+                submarinos nucleares, classificados como navios. As empresas
+                sul-coreanas Hyundai, Samsung e Daewoo são as principais
+                construtoras de navios.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <header class="card-header">
+              <h2>O trem</h2>
+            </header>
+            <img src="./images/trem.jpg" alt="Trem" />
+            <div class="card-title">
+              <h4>Sobre o trem</h4>
+            </div>
+            <div class="card-text">
+              Um trem (português brasileiro) ou comboio (português europeu) é um
+              transporte ferroviário que consiste num ou vários veículos (vagões
+              ou carruagens), ligados entre si e capazes de se movimentarem
+              sobre trilhos ou carris, para transportarem pessoas ou cargas de
+              um lado para outro, seguindo uma rota previamente planeada.[1]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="container">
+      Agora alguma imgens dos veículos que citamos acima
+    </h2>
+    <div
+      id="carousel-imagens"
+      class="carousel carousel-fade carousel-slide container"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="/images/aviao3.jpg" alt="" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/navio2.jpg" alt="" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/trem2.jpg" alt="" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/aviao.jpg" alt="" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/trem3.jpg" alt="" />
+        </div>
+      </div>
+      <button
+        data-bs-target="#carousel-imagens"
+        data-bs-slide="prev"
+        class="carousel-control-prev"
+        type="button"
+      >
+        <span class="carousel-control-prev-icon"> </span>
+      </button>
+      <button
+        type="button"
+        class="carousel-control-next"
+        data-bs-slide="next"
+        data-bs-target="#carousel-imagens"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button
+          class="active"
+          type="button"
+          data-bs-target="#carousel-imagens"
+          data-bs-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-imagens"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-imagens"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-imagens"
+          data-bs-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-imagens"
+          data-bs-slide-to="4"
+        ></button>
+      </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
